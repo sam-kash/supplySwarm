@@ -1,0 +1,52 @@
+.report-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.report-container > h2 {
+  color: #f8fafc;
+  font-size: 22px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+  padding: 16px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+.recommendation h3 {
+  color: white;
+}
+
+.recommendation p {
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.recommendation strong {
+  display: block;
+  color: #3b82f6;
+  font-size: 18px;
+}
+
+.recommendation span {
+  color: #22c55e;
+  font-size: 13px;
+  font-weight: 600;
+}

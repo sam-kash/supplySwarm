@@ -1,0 +1,58 @@
+.supply-graph-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.graph-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.graph-heading h2 {
+  color: #f8fafc;
+  font-size: 22px;
+}
+
+.graph-heading span {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.react-flow-wrapper {
+  min-height: 0;
+  flex: 1;
+  overflow: hidden;
+  border: 1px solid #334155;
+  border-radius: 12px;
+}
+
+.react-flow {
+  background: #0f172a;
+}
+
+.react-flow__minimap {
+  overflow: hidden;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #1e293b;
+}
+
+.react-flow__controls {
+  overflow: hidden;
+  border: 1px solid #334155;
+  border-radius: 8px;
+}
+
+.react-flow__controls-button {
+  border-bottom: 1px solid #334155;
+  background: #1e293b;
+  fill: #cbd5e1;
+}
+
+.react-flow__controls-button:last-child {
+  border-bottom: 0;
+}

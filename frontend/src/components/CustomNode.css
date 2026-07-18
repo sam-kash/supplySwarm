@@ -1,0 +1,46 @@
+.custom-node {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 220px;
+  padding: 14px;
+  border: 2px solid #334155;
+  border-radius: 12px;
+  background: #0f172a;
+  color: white;
+  transition: 0.3s;
+}
+
+.custom-node h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.custom-node small {
+  color: #94a3b8;
+}
+
+.custom-node.normal {
+  border-color: #334155;
+}
+
+.custom-node.failed {
+  border-color: #ef4444;
+  background: #2a1010;
+}
+
+.custom-node.active {
+  border-color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.2);
+}
+
+.custom-node.recovered {
+  border-color: #22c55e;
+}
+
+.custom-node .react-flow__handle {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #0f172a;
+  background: #64748b;
+}

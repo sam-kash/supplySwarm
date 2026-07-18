@@ -1,0 +1,34 @@
+{
+  "timeline": [
+    {
+      "agent": "Planner",
+      "status": "completed"
+    },
+    {
+      "agent": "Dependency Mapper",
+      "status": "completed"
+    },
+    {
+      "agent": "Risk Analyzer",
+      "status": "running"
+    },
+    {
+      "agent": "Supplier Finder",
+      "status": "pending"
+    },
+    {
+      "agent": "Decision Agent",
+      "status": "pending"
+    }
+  ],
+  "report": {
+    "affectedProducts": [
+      "Phone X",
+      "Phone Y"
+    ],
+    "estimatedLoss": "₹8 Cr",
+    "recoveryTime": "3 Days",
+    "recommendedSupplier": "Supplier B",
+    "confidence": 92
+  }
+}

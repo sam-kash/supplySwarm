@@ -1,0 +1,17 @@
+.status-card {
+  padding: 16px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+.status-title {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.status-value {
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
