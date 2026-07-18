@@ -1,0 +1,14 @@
+[
+  {
+    "component": "Battery",
+    "supplier": "Supplier B",
+    "extraCost": "5%",
+    "confidence": 94
+  },
+  {
+    "component": "Display",
+    "supplier": "Supplier C",
+    "extraCost": "8%",
+    "confidence": 88
+  }
+]

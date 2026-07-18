@@ -1,0 +1,17 @@
+[
+  {
+    "component": "Battery",
+    "stockDays": 2,
+    "priority": "Critical"
+  },
+  {
+    "component": "Display",
+    "stockDays": 5,
+    "priority": "Medium"
+  },
+  {
+    "component": "Chip",
+    "stockDays": 10,
+    "priority": "Low"
+  }
+]

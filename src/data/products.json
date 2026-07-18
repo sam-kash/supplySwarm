@@ -1,0 +1,14 @@
+[
+  {
+    "id": "PROD001",
+    "name": "Phone X"
+  },
+  {
+    "id": "PROD002",
+    "name": "Tablet Pro"
+  },
+  {
+    "id": "PROD003",
+    "name": "Smart Watch"
+  }
+]

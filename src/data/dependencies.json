@@ -1,0 +1,24 @@
+[
+  {
+    "supplier": "Supplier A",
+    "component": "Battery",
+    "products": [
+      "Phone X",
+      "Tablet Pro"
+    ]
+  },
+  {
+    "supplier": "Supplier B",
+    "component": "Display",
+    "products": [
+      "Phone X"
+    ]
+  },
+  {
+    "supplier": "Supplier C",
+    "component": "Chip",
+    "products": [
+      "Smart Watch"
+    ]
+  }
+]

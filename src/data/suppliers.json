@@ -1,0 +1,20 @@
+[
+  {
+    "id": "SUP001",
+    "name": "Supplier A",
+    "country": "China",
+    "status": "active"
+  },
+  {
+    "id": "SUP002",
+    "name": "Supplier B",
+    "country": "India",
+    "status": "active"
+  },
+  {
+    "id": "SUP003",
+    "name": "Supplier C",
+    "country": "Vietnam",
+    "status": "active"
+  }
+]
