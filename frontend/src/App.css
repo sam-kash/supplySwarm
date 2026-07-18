@@ -52,6 +52,9 @@ body {
 
 .report {
   grid-area: report;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
   padding: 20px;
   border: 1px solid #334155;
   border-radius: 16px;
