@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Inter, sans-serif;
+  overflow: hidden;
+}
+
+.dashboard {
+  display: grid;
+  height: 100vh;
+  gap: 16px;
+  padding: 16px;
+  grid-template-columns: 240px 1fr 420px;
+  grid-template-rows: 70px 1fr 220px;
+  grid-template-areas:
+    'header header header'
+    'sidebar graph report'
+    'sidebar timeline report';
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  background: #1e293b;
+}
+
+.graph {
+  grid-area: graph;
+  min-width: 0;
+  min-height: 0;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  background: #1e293b;
+}
+
+.timeline {
+  grid-area: timeline;
+}
+
+.report {
+  grid-area: report;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  background: #1e293b;
+}
+
+.timeline {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  background: #1e293b;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 16px;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .bottom-section {
+    grid-template-columns: minmax(0, 11fr) minmax(0, 9fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .bottom-section {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #334155;
+}
+
+@media (max-width: 960px) {
+  .dashboard {
+    height: auto;
+    min-height: 100vh;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 70px 360px 220px 220px;
+    grid-template-areas:
+      'header header'
+      'sidebar graph'
+      'sidebar timeline'
+      'report report';
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header,
+  .sidebar,
+  .graph,
+  .timeline,
+  .report {
+    min-height: 180px;
+  }
+}

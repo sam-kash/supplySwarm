@@ -1,0 +1,23 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.timeline-container h2 {
+  margin-bottom: 16px;
+  color: #f8fafc;
+  font-size: 22px;
+}
+
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 8px;
+}
