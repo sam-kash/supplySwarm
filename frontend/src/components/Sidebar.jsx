@@ -1,9 +1,11 @@
+import { useState } from 'react'
 import { AlertTriangle, Database, Factory, LoaderCircle, Play } from 'lucide-react'
 import './Sidebar.css'
 
 const suppliers = ['Supplier A', 'Supplier B', 'Supplier C']
 
-function Sidebar({ onRun, running, simulationStatus }) {
+function Sidebar({ onRun, running, simulationStatus, error }) {
+  const [supplier, setSupplier] = useState(suppliers[0])
   return (
     <div className="sidebar-container">
       <h2>Simulation Control</h2>
@@ -36,7 +38,7 @@ function Sidebar({ onRun, running, simulationStatus }) {
           Supplier
         </label>
 
-        <select id="supplier" defaultValue={suppliers[0]}>
+        <select id="supplier" value={supplier} onChange={(event) => setSupplier(event.target.value)}>
           {suppliers.map((supplier) => (
             <option key={supplier}>{supplier}</option>
           ))}
@@ -55,7 +57,14 @@ function Sidebar({ onRun, running, simulationStatus }) {
         </strong>
       </div>
 
-      <button className="run-btn" type="button" onClick={onRun} disabled={running}>
+      {error && <p className="analysis-error" role="alert">{error}</p>}
+
+      <button
+        className="run-btn"
+        type="button"
+        onClick={() => onRun({ type: 'supplier_failure', node: supplier })}
+        disabled={running}
+      >
         {running ? (
           <LoaderCircle size={18} className="spin" aria-hidden="true" />
         ) : (

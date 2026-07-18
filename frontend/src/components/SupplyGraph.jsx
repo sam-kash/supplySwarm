@@ -55,14 +55,15 @@ const edges = [
   { id: '4-5', source: '4', target: '5', animated: true },
 ]
 
-function SupplyGraph({ failedNodes }) {
-  const nodes = baseNodes.map((node, index) => ({
+function SupplyGraph({ failedNodes, activeNodeId, disruptedNode }) {
+  const nodes = baseNodes.map((node) => ({
     ...node,
     data: {
       ...node.data,
+      label: node.id === '1' ? disruptedNode : node.data.label,
       status: failedNodes.includes(node.id)
         ? 'failed'
-        : failedNodes.length > 0 && failedNodes.length === index
+        : node.id === activeNodeId
           ? 'active'
           : 'normal',
     },
